@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A3E62C6-8313-4006-B200-002928F94B38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CoffeeManagement</RootNamespace>
+    <AssemblyName>CoffeeManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net, Version=0.1.4141.31969, Culture=neutral, PublicKeyToken=f3bc8f8c31beeb49, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net.0.1.0\lib\net35\BCrypt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCommodityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCommodityForm.Designer.cs">
+      <DependentUpon>AddCommodityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Area_TableForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Area_TableForm.Designer.cs">
+      <DependentUpon>Area_TableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommodityForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommodityForm.Designer.cs">
+      <DependentUpon>CommodityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="EmployeeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageForm.Designer.cs">
+      <DependentUpon>ManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayForm.Designer.cs">
+      <DependentUpon>PayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalaryEmployeeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SalaryEmployeeForm.Designer.cs">
+      <DependentUpon>SalaryEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalaryStatisticsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SalaryStatisticsForm.Designer.cs">
+      <DependentUpon>SalaryStatisticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SellForm.Designer.cs">
+      <DependentUpon>SellForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatisticForm.Designer.cs">
+      <DependentUpon>StatisticForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TypeOfCommodityForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TypeOfCommodityForm.Designer.cs">
+      <DependentUpon>TypeOfCommodityForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCommodityForm.resx">
+      <DependentUpon>AddCommodityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Area_TableForm.resx">
+      <DependentUpon>Area_TableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePasswordForm.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommodityForm.resx">
+      <DependentUpon>CommodityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageForm.resx">
+      <DependentUpon>ManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayForm.resx">
+      <DependentUpon>PayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SalaryEmployeeForm.resx">
+      <DependentUpon>SalaryEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalaryStatisticsForm.resx">
+      <DependentUpon>SalaryStatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellForm.resx">
+      <DependentUpon>SellForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticForm.resx">
+      <DependentUpon>StatisticForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TypeOfCommodityForm.resx">
+      <DependentUpon>TypeOfCommodityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_area_table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_changepassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_infor_employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_typeofcommodity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_coffee_cup_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_coffee_cup_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_coffee_cup_using.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clear.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
